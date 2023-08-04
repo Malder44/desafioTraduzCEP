@@ -1,3 +1,5 @@
+package br.com.borges.leonorico.desafiotraduzcep;
+
 public class Endereco {
 
     private int cep;
