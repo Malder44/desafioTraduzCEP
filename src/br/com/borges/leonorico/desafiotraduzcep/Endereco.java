@@ -1,5 +1,7 @@
 package br.com.borges.leonorico.desafiotraduzcep;
 
+import java.util.Scanner;
+
 public class Endereco {
 
     private int cep;
@@ -8,6 +10,7 @@ public class Endereco {
     private String bairro;
     private String municipio;
     private String estado;
+    private Scanner scanner;
 
     public Endereco(EnderecoViaCep enderecoViaCep) {
         //recebe a classe intermediaria que abriga em seus atributos os dados vindos do JSON
@@ -29,5 +32,24 @@ public class Endereco {
                 ", Municipio = \"" + municipio + "\"" +
                 ", Estado = \"" + estado + "\"" +
                 ')';
+    }
+
+    public void adicionaComplemento() {
+        scanner = new Scanner(System.in);
+        String resposta;
+
+        if(verificaComplemento()) {
+            System.out.println("Não há complemento para o determinado endereço. Deseja adicionar complemento ao endereço?");
+            resposta = scanner.nextLine();
+            if(resposta.equalsIgnoreCase("sim")) {
+                System.out.println("Informe o complemento para ser inserido");
+                resposta = scanner.nextLine();
+                this.complemento = resposta;
+            }
+        }
+    }
+
+    public boolean verificaComplemento() {
+        return this.complemento.equalsIgnoreCase("");
     }
 }
