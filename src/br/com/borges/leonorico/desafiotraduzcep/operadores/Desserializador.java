@@ -10,6 +10,7 @@ public class Desserializador {
 
     Gson gson;
     EnderecoViaCep enderecoViaCep;
+    Endereco endereco;
 
     public Desserializador() {
         gson = new Gson();
@@ -20,6 +21,8 @@ public class Desserializador {
         if(enderecoViaCep.erro()) {
             throw new NoSuchElementException("Esse CEP não existe.");
         }
-        return new Endereco(enderecoViaCep);
+        endereco = new Endereco(enderecoViaCep);
+        System.out.println(endereco.toString());
+        return endereco;
     }
 }
