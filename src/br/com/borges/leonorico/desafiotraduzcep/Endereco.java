@@ -10,6 +10,7 @@ public class Endereco {
     private String estado;
 
     public Endereco(EnderecoViaCep enderecoViaCep) {
+        //recebe a classe intermediaria que abriga em seus atributos os dados vindos do JSON
         this.cep = Integer.valueOf(enderecoViaCep.cep().replace("-",""));
         this.rua = enderecoViaCep.logradouro();
         this.complemento = enderecoViaCep.complemento();

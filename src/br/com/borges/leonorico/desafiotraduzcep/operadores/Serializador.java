@@ -22,6 +22,7 @@ public class Serializador {
             writer.write(gson.toJson(lista));
             writer.close();
         } catch(IOException e) {
+            //retorna exceção caso tenha ocorrida algum erro de entrada
             throw new RuntimeException("Não foi possível gravar os dados em arquivo.");
         }
     }
