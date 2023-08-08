@@ -1,4 +1,4 @@
-package br.com.borges.leonorico.desafiotraduzcep;
+package br.com.borges.leonorico.desafiotraduzcep.enderecos;
 
 import java.util.Scanner;
 

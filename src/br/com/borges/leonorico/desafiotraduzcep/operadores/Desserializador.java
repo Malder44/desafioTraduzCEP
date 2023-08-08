@@ -1,7 +1,7 @@
 package br.com.borges.leonorico.desafiotraduzcep.operadores;
 
-import br.com.borges.leonorico.desafiotraduzcep.Endereco;
-import br.com.borges.leonorico.desafiotraduzcep.EnderecoViaCep;
+import br.com.borges.leonorico.desafiotraduzcep.enderecos.Endereco;
+import br.com.borges.leonorico.desafiotraduzcep.enderecos.EnderecoViaCep;
 import com.google.gson.Gson;
 
 import java.util.NoSuchElementException;

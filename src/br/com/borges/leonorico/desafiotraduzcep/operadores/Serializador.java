@@ -1,6 +1,6 @@
 package br.com.borges.leonorico.desafiotraduzcep.operadores;
 
-import br.com.borges.leonorico.desafiotraduzcep.Endereco;
+import br.com.borges.leonorico.desafiotraduzcep.enderecos.Endereco;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

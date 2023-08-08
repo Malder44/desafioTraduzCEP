@@ -7,6 +7,7 @@ Desenvolvido em agosto de 2023 por Leonorico Borges.
 
 package br.com.borges.leonorico.desafiotraduzcep;
 
+import br.com.borges.leonorico.desafiotraduzcep.enderecos.Endereco;
 import br.com.borges.leonorico.desafiotraduzcep.operadores.BuscadorCEP;
 import br.com.borges.leonorico.desafiotraduzcep.operadores.Desserializador;
 import br.com.borges.leonorico.desafiotraduzcep.operadores.Serializador;
